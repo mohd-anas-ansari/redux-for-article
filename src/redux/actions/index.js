@@ -1,0 +1,1 @@
+import {ADD_ARTICLE } from '../type'
