@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { Component } from "react";
 
-function Count() {
-  return (
-    <div>
-      <h1>Things you wanna see.</h1>
-    </div>
-  )
+console.log(this, "inside  Count");
+
+export class Count extends Component {
+	render() {
+		return (
+			<div>
+				<h1>{this.props.count}</h1>
+			</div>
+		);
+	}
 }
 
-export default Count
+export default Count;

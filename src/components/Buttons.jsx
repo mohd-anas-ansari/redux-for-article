@@ -1,12 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 
-function Buttons() {
-	return (
-		<div>
-			<button>Up</button>
-			<button>Down</button>
-		</div>
-	);
+class Buttons extends Component {
+	render() {
+		return (
+			<div>
+				<button onClick={this.props.handleUp}>Up</button>
+				<button onClick={this.props.handleDown}>Down</button>
+			</div>
+		);
+	}
 }
 
 export default Buttons;
